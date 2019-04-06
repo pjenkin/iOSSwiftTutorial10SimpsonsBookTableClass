@@ -11,14 +11,22 @@ import UIKit
 class detailsVC: UIViewController {
 
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var ageLabel: UILabel!
-    // actually occupation instead of age
+//    @IBOutlet weak var ageLabel: UILabel!
+    // actually occupation instead of age - REMmed out after connection deleted
+    @IBOutlet weak var occupationLabel: UILabel!
+    
     @IBOutlet weak var imageView: UIImageView!
+    
+    var selectedSimpson = Simpson()     // for taking data from 1st view
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        nameLabel.text = selectedSimpson.name
+        occupationLabel.text = selectedSimpson.occupation
+        imageView.image = selectedSimpson.image
+        
         // Do any additional setup after loading the view.
     }
 

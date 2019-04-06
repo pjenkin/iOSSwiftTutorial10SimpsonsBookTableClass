@@ -79,9 +79,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ageLabel" destination="c79-Sv-o42" id="cv0-5O-qhV"/>
                         <outlet property="imageView" destination="l7e-pI-yzX" id="y0J-Ve-fw0"/>
                         <outlet property="nameLabel" destination="YsD-Kk-n4m" id="tf1-48-LBQ"/>
+                        <outlet property="occupationLabel" destination="c79-Sv-o42" id="x5q-Rc-Ztc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmf-X5-G2P" userLabel="First Responder" sceneMemberID="firstResponder"/>

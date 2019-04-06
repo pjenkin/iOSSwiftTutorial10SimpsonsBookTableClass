@@ -13,6 +13,7 @@ class tableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var tableView: UITableView!
     
     var simpsons = [Simpson]()        // array of Simpson objects
+    var chosenSimpson = Simpson()
     
     
     override func viewDidLoad() {
@@ -86,6 +87,25 @@ class tableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = UITableViewCell()
         cell.textLabel?.text = simpsons[indexPath.row].name
         return cell
+    }
+    
+    // add another delegate for if row chosen (to segue)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.chosenSimpson = simpsons[indexPath.row]    // pass over Simpsons object according to row picked by user
+        // performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
+        self.performSegue(withIdentifier: "toDetailsViewController", sender: nil)        // segue name string copy/pasted carefully from Attributes Inspector off of main storyboard
+        // don't bother with sender info - only 1 route
+
+    }
+    
+    // define bespoke prepare for seque function for this app (override)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailsViewController"
+        {
+            let destinationVC = segue.destination as! detailsVC
+            destinationVC.selectedSimpson = self.chosenSimpson
+        }
+        
     }
 
     
