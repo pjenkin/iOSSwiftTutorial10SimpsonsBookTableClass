@@ -8,7 +8,7 @@
 
 import UIKit
 
-class tableViewController: UIViewController {
+class tableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,6 +19,10 @@ class tableViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
+        // table view setup
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
         // create our characters
         
@@ -64,9 +68,27 @@ class tableViewController: UIViewController {
         simpsons.append(lisa)
         simpsons.append(moe)
         simpsons.append(nick)
+        
 
     }
 
+
+    // NB may need in XCode to overwrite auto-completed parameters such as 'tableView:' to avoid an 'unnamed parameters' or 'explicit' warning
+    
+    // adding delegates to display rows and their actions
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return simpsons.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = simpsons[indexPath.row].name
+        return cell
+    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
