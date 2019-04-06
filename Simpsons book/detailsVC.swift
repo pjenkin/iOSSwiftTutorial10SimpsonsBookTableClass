@@ -12,6 +12,7 @@ class detailsVC: UIViewController {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
+    // actually occupation instead of age
     @IBOutlet weak var imageView: UIImageView!
     
     

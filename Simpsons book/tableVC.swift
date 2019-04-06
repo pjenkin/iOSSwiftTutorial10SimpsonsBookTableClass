@@ -12,10 +12,59 @@ class tableViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var simpsons = [Simpson]()        // array of Simpson objects
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        // create our characters
+        
+        let homer = Simpson()
+        
+        homer.name = "Homer Simpson"
+        homer.occupation = "Safety Inspector"
+        homer.image = UIImage(named: "homer.png")!
+
+        let bart = Simpson()
+        
+        bart.name = "Bart Simpson"
+        bart.occupation = "Student"
+        bart.image = UIImage(named: "bart.png")!
+
+        let marge = Simpson()
+        
+        marge.name = "Marge Simpson"
+        marge.occupation = "Homer Maker"
+        marge.image = UIImage(named: "marge.png")!
+
+        let lisa = Simpson()
+        
+        lisa.name = "Lisa Simpson"
+        lisa.occupation = "Student"
+        lisa.image = UIImage(named: "lisa.png")!
+        
+        let moe = Simpson()
+        
+        moe.name = "Moe Szyslak"
+        moe.occupation = "Barkeep"
+        moe.image = UIImage(named: "moe.jpeg")!
+        
+        let nick = Simpson()
+        
+        nick.name = "Nick Riviera"
+        nick.occupation = "Doctor Apparently"
+        nick.image = UIImage(named: "nick.png")!
+        
+        simpsons.append(homer)
+        simpsons.append(bart)
+        simpsons.append(marge)
+        simpsons.append(lisa)
+        simpsons.append(moe)
+        simpsons.append(nick)
+
     }
 
     override func didReceiveMemoryWarning() {

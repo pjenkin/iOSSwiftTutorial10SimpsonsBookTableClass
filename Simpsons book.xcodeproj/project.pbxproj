@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9438BE772258A7D2005AD000 /* detailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9438BE762258A7D2005AD000 /* detailsVC.swift */; };
+		9438BE7E2258BA1D005AD000 /* nick.png in Resources */ = {isa = PBXBuildFile; fileRef = 9438BE782258BA1D005AD000 /* nick.png */; };
+		9438BE7F2258BA1D005AD000 /* moe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9438BE792258BA1D005AD000 /* moe.jpeg */; };
+		9438BE802258BA1D005AD000 /* marge.png in Resources */ = {isa = PBXBuildFile; fileRef = 9438BE7A2258BA1D005AD000 /* marge.png */; };
+		9438BE812258BA1D005AD000 /* lisa.png in Resources */ = {isa = PBXBuildFile; fileRef = 9438BE7B2258BA1D005AD000 /* lisa.png */; };
+		9438BE822258BA1D005AD000 /* homer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9438BE7C2258BA1D005AD000 /* homer.png */; };
+		9438BE832258BA1D005AD000 /* bart.png in Resources */ = {isa = PBXBuildFile; fileRef = 9438BE7D2258BA1D005AD000 /* bart.png */; };
+		9438BE852258BAEA005AD000 /* Simpson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9438BE842258BAE9005AD000 /* Simpson.swift */; };
 		944FA2502257E14B00A068E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FA24F2257E14B00A068E8 /* AppDelegate.swift */; };
 		944FA2522257E14B00A068E8 /* tableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FA2512257E14B00A068E8 /* tableVC.swift */; };
 		944FA2552257E14B00A068E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944FA2532257E14B00A068E8 /* Main.storyboard */; };
@@ -36,6 +43,13 @@
 
 /* Begin PBXFileReference section */
 		9438BE762258A7D2005AD000 /* detailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailsVC.swift; sourceTree = "<group>"; };
+		9438BE782258BA1D005AD000 /* nick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nick.png; sourceTree = "<group>"; };
+		9438BE792258BA1D005AD000 /* moe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moe.jpeg; sourceTree = "<group>"; };
+		9438BE7A2258BA1D005AD000 /* marge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marge.png; sourceTree = "<group>"; };
+		9438BE7B2258BA1D005AD000 /* lisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lisa.png; sourceTree = "<group>"; };
+		9438BE7C2258BA1D005AD000 /* homer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homer.png; sourceTree = "<group>"; };
+		9438BE7D2258BA1D005AD000 /* bart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bart.png; sourceTree = "<group>"; };
+		9438BE842258BAE9005AD000 /* Simpson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simpson.swift; sourceTree = "<group>"; };
 		944FA24C2257E14B00A068E8 /* Simpsons book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simpsons book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		944FA24F2257E14B00A068E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		944FA2512257E14B00A068E8 /* tableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableVC.swift; sourceTree = "<group>"; };
@@ -99,11 +113,18 @@
 		944FA24E2257E14B00A068E8 /* Simpsons book */ = {
 			isa = PBXGroup;
 			children = (
+				9438BE782258BA1D005AD000 /* nick.png */,
+				9438BE792258BA1D005AD000 /* moe.jpeg */,
+				9438BE7A2258BA1D005AD000 /* marge.png */,
+				9438BE7B2258BA1D005AD000 /* lisa.png */,
+				9438BE7C2258BA1D005AD000 /* homer.png */,
+				9438BE7D2258BA1D005AD000 /* bart.png */,
 				944FA24F2257E14B00A068E8 /* AppDelegate.swift */,
 				944FA2512257E14B00A068E8 /* tableVC.swift */,
 				944FA2532257E14B00A068E8 /* Main.storyboard */,
 				9438BE762258A7D2005AD000 /* detailsVC.swift */,
 				944FA2562257E14B00A068E8 /* Assets.xcassets */,
+				9438BE842258BAE9005AD000 /* Simpson.swift */,
 				944FA2582257E14B00A068E8 /* LaunchScreen.storyboard */,
 				944FA25B2257E14B00A068E8 /* Info.plist */,
 			);
@@ -235,9 +256,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9438BE802258BA1D005AD000 /* marge.png in Resources */,
+				9438BE812258BA1D005AD000 /* lisa.png in Resources */,
+				9438BE832258BA1D005AD000 /* bart.png in Resources */,
+				9438BE7F2258BA1D005AD000 /* moe.jpeg in Resources */,
+				9438BE7E2258BA1D005AD000 /* nick.png in Resources */,
 				944FA25A2257E14B00A068E8 /* LaunchScreen.storyboard in Resources */,
 				944FA2572257E14B00A068E8 /* Assets.xcassets in Resources */,
 				944FA2552257E14B00A068E8 /* Main.storyboard in Resources */,
+				9438BE822258BA1D005AD000 /* homer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				944FA2522257E14B00A068E8 /* tableVC.swift in Sources */,
+				9438BE852258BAEA005AD000 /* Simpson.swift in Sources */,
 				9438BE772258A7D2005AD000 /* detailsVC.swift in Sources */,
 				944FA2502257E14B00A068E8 /* AppDelegate.swift in Sources */,
 			);
